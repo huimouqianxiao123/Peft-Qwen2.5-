@@ -244,13 +244,3 @@ generate(..., use_cache=True)
 正确数: 28/30
 准确率: 93.33%
 ```
-
-## 本地结构测试
-
-本仓库包含一些 notebook 结构测试，可在本地运行：
-
-```bash
-python -m unittest tests.test_fastapi_deploy_notebook -v
-```
-
-该测试不加载大模型，只检查部署 notebook 是否包含关键接口、adapter 路径、动态 batch、KV cache 和 30 条手写测试用例。
